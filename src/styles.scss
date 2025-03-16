@@ -1,0 +1,53 @@
+
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+@mixin font-create($size, $lineH, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineH;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+.font-14-400 { @include font-create(14px, 18px, 400) }
+.font-14-500 { @include font-create(14px, 18px, 500) }
+.font-14-600 { @include font-create(14px, 18px, 600) }
+.font-14-700 { @include font-create(14px, 18px, 700) }
+
+.font-18-400 { @include font-create(18px, 24px, 400) }
+.font-18-500 { @include font-create(18px, 24px, 500) }
+.font-18-600 { @include font-create(18px, 24px, 600) }
+.font-18-700 { @include font-create(18px, 24px, 700) }
+
+.font-10-400 { @include font-create(12px, 16px, 400) }
+.font-22-400 { @include font-create(22px, 30px, 400) }
+.font-22-500 { @include font-create(22px, 30px, 500) }
+.font-22-600 { @include font-create(22px, 30px, 600) }
+.font-22-700 { @include font-create(20px, 22px, 700) }
+
+.ft-green{color: rgb(0, 193, 16);}
+.ft-bl{color: black;}
+.ft-gr900 {color: rgb(37, 37, 37);}
+.ft-gr800 {color: rgb(57, 57, 57);}
+.ft-gr700 {color: rgb(97, 97, 97);}
+.ft-gr600 {color: rgb(127, 127, 127);}
+.ft-white {color: rgb(255, 255, 255);}
+.ft-ac-blue {color: #3483fa }
+.ft-ac-yellow{ color:#ffe600 }
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.shadowz2{
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+.shadowz4{
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+                0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+                0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}

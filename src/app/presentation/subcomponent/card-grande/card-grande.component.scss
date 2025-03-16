@@ -1,0 +1,38 @@
+.container-C-G{
+    width: 550px;
+    height: 250px;
+    border-radius: 4px;
+    display: flex;flex-direction: row;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.container-C{
+    flex: 1;
+    padding: 30px 40px;
+    background-color: #ffffff;
+}
+.img-card{
+    flex: 1;
+    cursor: pointer;}
+.container-c1{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.btn-C{
+    width: fit-content;
+    padding: 4px 28px;
+    height: 25px;
+    text-align: center;
+    align-content: center;
+    border: 1px solid blue;
+    border-radius: 3px;
+    color: white;
+    background-color: #3483fa;
+}
+.btn-C:hover{
+background-color: #002aff;
+}

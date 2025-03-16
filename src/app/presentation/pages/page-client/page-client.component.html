@@ -1,0 +1,15 @@
+<div class="header">
+    <app-header> </app-header>
+</div>
+<div style="padding: 40px; display: flex; flex-wrap: wrap; row-gap: 20px;gap: 20px; justify-content: center; "> 
+    @for (i of lista; track $index) {
+        <app-card-products
+        [img]="i.img"
+        [titulo]="i.titulo"
+        [precio]="i.precio"
+        [preciodecimal]="i.decimales"
+        [envio]="i.envio"
+        ></app-card-products>
+    }
+    
+</div>

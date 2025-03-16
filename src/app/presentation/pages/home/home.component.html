@@ -1,0 +1,33 @@
+<div class="header">
+    <app-header> </app-header>
+</div>
+<div class="background-img">
+    <img src="./assets/img/back1.webp" >
+</div>
+
+<div class="body" style="
+    top: -20%;
+    position: relative;
+    z-index: 5; ;padding: 40px; display: flex; flex-direction: column; row-gap: 40px; " >
+    <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;" >
+        @for (item of lista2; track $index) {
+            <gen-card
+            [titulo]="item.titulo"
+            [descripcion]="item.descripcion"
+            [boton]="item.boton"
+            ></gen-card>   
+            }
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content:center ;">
+        @for (i of lista; track $index) {
+            <app-card-grande
+            [Titulo]="i.titulo"
+            [entrena]="i.contenido"
+            [boton]="i.Bton"
+            [img]="i.img"
+            [url]="i.path"
+            ></app-card-grande>
+        }
+    </div>
+    
+</div>
